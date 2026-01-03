@@ -21,6 +21,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('UAT') {
+            steps {
+                echo 'Perform UAT Test'
+            }
+        }
         stage('Complete') {
             steps {
                 echo 'Job Complete!'

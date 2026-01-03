@@ -31,10 +31,5 @@ pipeline {
                 echo 'Job Complete!'
             }
         }
-        stage('Validation') {
-            steps {
-                echo 'Customer perform validation'
-            }
-        }
     }
 }
